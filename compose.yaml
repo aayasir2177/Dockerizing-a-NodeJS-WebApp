@@ -1,0 +1,33 @@
+services:
+  nginx-pm:
+    image: 'jc21/nginx-proxy-manager:2.15.1'
+    restart: unless-stopped
+
+    ports:
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+
+    environment:
+      TZ: "Asia/Karachi"
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+    networks:
+      - web
+
+  nodejs-webapp:
+    build: .
+    restart: unless-stopped
+
+    expose: 
+      - "8080"
+
+    networks:
+      - web
+
+networks:
+    web:
+      name: web

@@ -1,0 +1,1000 @@
+  186  mv 192.168.122.68 192.168.122.68.yaml
+  187  ls
+  188  cd
+  189  cd ansible-practice/
+  190  cat site.yaml 
+  191  cat roles/web_servers/tasks/main.yaml 
+  192  vim roles/web_servers/tasks/main.yaml 
+  193  ansible-playbook --syntax-check site.yaml 
+  194  vim roles/web_servers/tasks/main.yaml 
+  195  ansible-playbook --syntax-check site.yaml 
+  196  ansible-playbook site.yaml 
+  197  cat host_vars/192.168.122.68
+  198  cd host_vars/
+  199  ls
+  200  cat 192.168.122.83.yaml 
+  201  vim 192.168.122.68
+  202  ansible-playbook --syntax-check site.yaml 
+  203  cd ..
+  204  ansible-playbook --syntax-check site.yaml 
+  205  ansible-playbook site.yaml 
+  206  tree
+  207  cd roles/base/
+  208  mkdir templates
+  209  tree
+  210  ssh ubu
+  211  ssh fed
+  212  sudo dnf up -y
+  213  cd ansible-practice/
+  214  sudo dnf search git
+  215  rpm -qa : git
+  216  ssh-keygen 
+  217  cat ~/.ssh/github.pub 
+  218  ssh git@github.com:aayasir2177/ansible-practice.git
+  219  rm ~/.ssh/github.pub 
+  220  ssh-keygen 
+  221  ssh-keygen -C "aayasir217@gmail.com"
+  222  cat ~/.ssh/github.pub 
+  223  ssh -T man
+  224  man ssh
+  225  ssh -T git@github.com:aayasir2177/ansible-practice.git
+  226  ssh -T git@github.com
+  227  sudo ssh -T git@github.com
+  228  ssh -i ~/.ssh/github -T git@github.com
+  229  vim ~/.ssh/config 
+  230  ls ~/.ssh/config 
+  231  ls ~/.ssh/config
+  232  ll ~/.ssh/config
+  233  chmod 600 ~/.ssh/config
+  234  ll ~/.ssh/config
+  235  ssh -T git@github.com
+  236  ssh github.com
+  237  git status
+  238  git add .
+  239  git init
+  240  git remote add origin git@github.com:aayasir2177/ansible-practice.git
+  241  git remote -v
+  242  git status
+  243  git add .
+  244  git status
+  245  git commit -m "my complete ansible practice"
+  246  git config --global user.email "aayasir217@gmail.com"
+  247  git config --global user.name "Yasir"
+  248  git commit -m "my complete ansible practice"
+  249  git branch -M main
+  250  git push -u origin main 
+  251  git pull
+  252  git push -u origin main 
+  253  git pull origin main --rebase
+  254  git push -u origin main
+  255  git remote show origin
+  256  git log
+  257  git log --graph 
+  258  git log --graph --all
+  259  git log --graph --all -p
+  260  git status
+  261  sudo dnf up -y
+  262  virsh
+  263  virsh list --al
+  264  virsh list --all
+  265  sudo systemctl status libvirt
+  266  sudo scp 192.168.122.83:~/history.txt ~/
+  267  sudo scp yasir@192.168.122.83:~/history.txt ~/
+  268  sudo scp yasir@192.168.122.83:~/hisotry.txt ~/
+  269  ls
+  270  scp yasir@192.168.122.68:~/his.txt ~/
+  271  ls
+  272  tmux
+  273  VIM
+  274  vim
+  275  fg
+  276  ls
+  277  vim
+  278  cd
+  279  cd .config/
+  280  ls
+  281  cd
+  282  pw
+  283  pwd
+  284  vim .vimrc
+  285  vim .vimrc 3
+  286  vim .vimrc +3
+  287  vim
+  288  scp yasir@192.168.122.83:~/linux-backup-automation ~/
+  289  scp yasir@192.168.122.83:~/linux-backup-automation/* ~/linux-backup-automation
+  290  ls
+  291  cd linux-backup-automation/
+  292  ls
+  293  git init
+  294  git add .
+  295  ssh git@github.com:aayasir2177/linux-backup-automation.git
+  296  ssh git@github.com:aayasir2177/linux-backup-automation.git -T 
+  297  ssh git@github.com:aayasir2177/linux-backup-automation.git -T -i ~/.ssh/github 
+  298  ssh -T -i ~/.ssh/github git@github.com
+  299  git remote -v
+  300  git remote set-url origin git@github.com:aayasir2177/linux-backup-automation.git
+  301  git remote add origin git@github.com:aayasir2177/linux-backup-automation.git
+  302  git remote -v
+  303  git push -u origin main
+  304  git status
+  305  git add .
+  306  git commit -m " "
+  307  git commit -m " backup script"
+  308  git push -u origin main
+  309  git branch -M main
+  310  git push -u origin main
+  311  git pull
+  312  git push -u origin main
+  313  git log --oneline --all --graph
+  314  git pull origin main --allow-unrelated-histories
+  315  git push -u origin main -f
+  316  git status
+  317  cd
+  318  scp yasir@fed:~/h.txt ~/
+  319  ls
+  320  tmux
+  321  cd linux-backup-automation/
+  322  ls
+  323  vim backup.
+  324  vim backup.sh
+  325  sudo systemctl start backup.service
+  326  ls
+  327  tail backup.sh
+  328  git add .
+  329  git commit -m "added healtcheck alert"
+  330  git push
+  331  git pull
+  332  git config pull.rebase true
+  333  git pull
+  334  ls
+  335  tail backup.sh
+  336  git push
+  337  curl -fsS https://hc-ping.com/613dc637-27ec-4fe7-a61c-6817bfbd95a4
+  338  cd
+  339  ssh ubu
+  340  ls
+  341  cd .ssh/
+  342  ls
+  343  vim config 
+  344  ssh ubu
+  345  ssh fed
+  346  ssh fed
+  347  sudo dnf install google-chrome-stable
+  348  sudo dnf up -y
+  349  sudo dnf clean packages
+  350  sudo dnf clean metadata
+  351  sudo dnf makecache
+  352  kde -v
+  353  plasma -v
+  354  plasmashell -v
+  355  mkdir bash-practice
+  356  cd bash-practice/
+  357  git init
+  358  ssh git@github.com:aayasir2177/Bash-Practice.git
+  359  git clone git@github.com:aayasir2177/Bash-Practice.git
+  360  ls
+  361  cd Bash-Practice/
+  362  cd ..
+  363  mb Bash-Practice/ ../
+  364  mv Bash-Practice/ ../
+  365  cd ..
+  366  ls
+  367  rmdir bash-practice/
+  368  rmdir bash-practice/ -f
+  369  rmdir -r bash-practice/ -f
+  370  rm -r bash-practice/
+  371  ls
+  372  cd Bash-Practice/
+  373  ls
+  374  git add .
+  375  git commit -m "blank"
+  376  echo "# Bash-Practice" >> README.md
+  377  git init
+  378  git add README.md
+  379  git commit -m "first commit"
+  380  git branch -M main
+  381  git remote add origin git@github.com:aayasir2177/Bash-Practice.git
+  382  git push -u origin main
+  383  vim if.sh
+  384  ll
+  385  chmod 755 ./*
+  386  ll
+  387  ./if.sh 
+  388  vim if.sh 
+  389  ./if.sh 
+  390  vim if.sh 
+  391  ./if.sh 
+  392  vim if.sh 
+  393  ./if.sh 
+  394  vim if.sh 
+  395  ./if.sh 
+  396  vim if.sh 
+  397  ./if.sh 
+  398  vim if.sh 
+  399  ./if.sh 
+  400  vim if.sh 
+  401  ./if.sh 
+  402  vim if.sh 
+  403  ./if.sh 
+  404  vim if.sh 
+  405  ./if.sh 
+  406  vim if.sh 
+  407  ./if.sh 
+  408  vim if.sh 
+  409  ./if.sh 
+  410  vim if.sh 
+  411  ./if.sh 
+  412  vim if.sh 
+  413  ./if.sh 
+  414  vim if.sh 
+  415  ./if.sh 
+  416  touch ../file
+  417  ./if.sh 
+  418  vim if.sh 
+  419  ./if.sh 
+  420  vim if.sh 
+  421  ./if.sh 
+  422  htop
+  423  ./if.sh 
+  424  vim if.sh 
+  425  ./if.sh 
+  426  which htop
+  427  vim if.sh 
+  428  ./if.sh 
+  429  vim if.sh 
+  430  command -v htop
+  431  vim if.sh 
+  432  fg
+  433  ./if.sh 
+  434  vim if.sh 
+  435  ./if.sh 
+  436  vim if.sh 
+  437  ./if.sh 
+  438  fg
+  439  ./if.sh 
+  440  vim if.sh 
+  441  mkdir ../logs
+  442  cp /var/log/*.log ~/logs/
+  443  ls ~/logs/
+  444  touch text.txt ~/logs/
+  445  ls ~/logs/
+  446  touch ~/logs/test.txt
+  447  ls ~/logs/
+  448  rm text.txt 
+  449  vim compress_logs.sh
+  450  ls
+  451  chmod 755 compress_logs.sh 
+  452  ./compress_logs.sh 
+  453  vim compress_logs.sh
+  454  ./compress_logs.sh 
+  455  vim compress_logs.sh
+  456  ll ../logs/
+  457  vim compress_logs.sh
+  458  ./compress_logs.sh 
+  459  ll ../logs/
+  460  vim compress_logs.sh
+  461  git add .
+  462  git commit -m "if practice and for loops"
+  463  git push 
+  464  echo hellow
+  465  hellow
+  466  'hellow'
+  467  sudo dnf up -y
+  468  cd Bash-Practice/
+  469  ls
+  470  vim update_packages.sh
+  471  touch logs.log
+  472  ls /etc/dnf
+  473  ls
+  474  chmod 755 update_packages.sh 
+  475  ./update_packages.sh 
+  476  ls
+  477  cat logs.log 
+  478  sudo dnf up -y &>> logs.log
+  479  cat logs.log 
+  480  vim update_packages.sh
+  481  echo "line break \n"
+  482  vim update_packages.sh
+  483  echo "$(date)"
+  484  echo "$(date)" >> logs.log 
+  485  CAT logs.log 
+  486  cat logs.log 
+  487  vim update_packages.sh
+  488  ./update_packages.sh 
+  489  cat logs.log 
+  490  sudo > logs.log 
+  491  > logs.log 
+  492  cat logs.log 
+  493  sudo ./update_packages.sh 
+  494  cat logs.log 
+  495  ls
+  496  ll
+  497  vim update_packages.sh 
+  498  ./update_packages.sh 
+  499  cat logs.log 
+  500  vim update_packages.sh 
+  501  ./update_packages.sh 
+  502  ll
+  503  pwd
+  504  vim update_packages.sh 
+  505  ./update_packages.sh 
+  506  cat logs.log 
+  507  vim update_packages.sh 
+  508  ./update_packages.sh 
+  509  cat logs.log 
+  510  ./update_packages.sh 
+  511  vim update_packages.sh 
+  512  ./update_packages.sh 
+  513  cat logs.log 
+  514  vim update_packages.sh 
+  515  ./update_packages.sh 
+  516  vim update_packages.sh 
+  517  ./update_packages.sh 
+  518  vim update_packages.sh 
+  519  ./update_packages.sh 
+  520  cat logs.log 
+  521  truncate -s 0 logs.log 
+  522  cat logs.log 
+  523  ./update_packages.sh 
+  524  cat logs.log 
+  525  ./update_packages.sh 
+  526  cat logs.log 
+  527  vim update_packages.sh 
+  528  ./update_packages.sh 
+  529  cat logs.log 
+  530  vim update_packages.sh 
+  531  ./update_packages.sh 
+  532  cat logs.log 
+  533  crontab -e
+  534  sudo vim crontab -e
+  535  ls
+  536  git add .
+  537  git status
+  538  git commit -m "update script"
+  539  git push
+  540  ls -la
+  541  vim update_packages.sh 
+  542  ./update_packages.sh 
+  543  cat logs.log 
+  544  vim count_lines.sh
+  545  chmod 755 count_lines.sh 
+  546  ./count_lines.sh 
+  547  ./count_lines.sh /etc
+  548  ls -l /etc | wc -l 
+  549  ls -l /etc 
+  550  ls -l /etc | head
+  551  vim count_lines.sh
+  552  ./count_lines.sh 
+  553  vim count_lines.sh
+  554  ./count_lines.sh 
+  555  vim count_lines.sh
+  556  ./count_lines.sh 
+  557  ./count_lines.sh /etc / /home
+  558  ./count_lines.sh /etc 
+  559  vim count_lines.sh
+  560  l
+  561  ll
+  562  vim backup.sh
+  563  chmod 755 backup.sh 
+  564  ./backup.sh 
+  565  ./backup.sh helo l
+  566  ./backup.sh helo 
+  567  ./backup.sh helo l s
+  568  chmod 755 backup.sh 
+  569  vim backup.sh
+  570  man rsync
+  571  vim backup.sh
+  572  date +%Y-%m-%d
+  573  vim backup.sh
+  574  man rsync
+  575  vim backup.sh
+  576  ll
+  577  mkdir needs_backup
+  578  mkdir backed_up
+  579  cp /var/log/ ./needs_backup/
+  580  ll needs_backup/
+  581  cp /var/log/ ./needs_backup/ -r
+  582  ll needs_backup/
+  583  sudo cp /var/log/ ./needs_backup/ -r 
+  584  ll needs_backup/
+  585  cat logs.log 
+  586  ll
+  587  ll needs_backup/
+  588  cat needs_backup/log/
+  589  rm -r  needs_backup/log
+  590  rm -r  needs_backup/log -y
+  591  rm -r  needs_backup/log -f
+  592  sudo rm -r  needs_backup/log -f
+  593  ll
+  594  cp /var/log/*.log ./needs_backup/
+  595  ll needs_backup/
+  596  ll
+  597  ./backup.sh 
+  598  ./backup.sh ./needs_backup/ ./backed_up/
+  599  vim backup.sh 
+  600  ./backup.sh ./needs_backup/ ./backed_up/
+  601  man rsync
+  602  vim backup.sh 
+  603  ./backup.sh 
+  604  ./backup.sh ./needs_backup/ ./backed_up/
+  605  ./backup.sh ./needs_backup ./backed_up
+  606  vim backup.sh 
+  607  ./backup.sh ./needs_backup ./backed_up
+  608  cd ./backed_up/logs/
+  609  ll
+  610  cat 2026-06-27.log 
+  611  vim backup.sh 
+  612  cd ..
+  613  cd .
+  614  cd ..
+  615  ll
+  616  vim backup.sh 
+  617  ./backup.sh ./needs_backup ./backed_up
+  618  tree backed_up/
+  619  rm -r ./backed_up/current/*
+  620  tree backed_up/
+  621  rm -r ./backed_up/logs/*
+  622  tree backed_up/
+  623  ./backup.sh ./needs_backup ./backed_up
+  624  tree backed_up/
+  625  cat ./backed_up/logs/2026-06-27.log 
+  626  sudo ./backup.sh ./needs_backup ./backed_up
+  627  cat ./backed_up/logs/2026-06-27.log 
+  628  vim backup.sh 
+  629  sudo ./backup.sh ./needs_backup ./backed_up
+  630  vim backup.sh 
+  631  sudo ./backup.sh ./needs_backup ./backed_up
+  632  vim backup.sh 
+  633  sudo ./backup.sh ./needs_backup ./backed_up
+  634  vim backup.sh 
+  635  sudo ./backup.sh ./needs_backup ./backed_up
+  636  tree backed_up/
+  637  touch ./needs_backup/test.txt
+  638  sudo ./backup.sh ./needs_backup ./backed_up
+  639  tree backed_up/
+  640  vim ./needs_backup/test.txt 
+  641  sudo ./backup.sh ./needs_backup ./backed_up
+  642  tree backed_up/
+  643  vim backup.sh 
+  644  rm -r backed_up/
+  645  rm -r backed_up/ -f
+  646  sudo rm -r backed_up/ -f
+  647  ll
+  648  mkdir backup_folder
+  649  ./backup.sh ./needs_backup/* ./backup_folder/
+  650  ./backup.sh ./needs_backup/* ./backup_folder
+  651  ./backup.sh ./needs_backup/ ./backup_folder
+  652  tree backup_folder/
+  653  vim ./needs_backup/test.txt 
+  654  ./backup.sh ./needs_backup/ ./backup_folder
+  655  tree backup_folder/
+  656  vim backup.sh 
+  657  sudo rm -r backed_up/ -f
+  658  ./backup.sh ./needs_backup/ ./backup_folder
+  659  tree backup_folder/
+  660  sudo rm -rf ./backup_folder/
+  661  ./backup.sh ./needs_backup/ ./backup_folder
+  662  tree backup_folder/
+  663  vim ./needs_backup/test.txt 
+  664  ./backup.sh ./needs_backup/ ./backup_folder
+  665  tree backup_folder/
+  666  cat ./backup_folder/incremental_backups/2026-06-27/test.txt 
+  667  cat backup_folder/current/test.txt 
+  668  cat backup_folder/logs/2026-06-27.log 
+  669  ll
+  670  cat logs.log 
+  671  ll
+  672  vim update_packages.sh 
+  673  mv logs.log update_logs.log
+  674  ./update_packages.sh 
+  675  cat update_logs.log 
+  676  ll
+  677  git add .
+  678  git commit -m "created a backup script"
+  679  git push
+  680  ll
+  681  vim backup
+  682  vim backup.sh 
+  683  ./backup.sh 
+  684  ./backup.sh ./needs_backup/ ./backup_folder/
+  685  tree backup_folder/
+  686  ll
+  687  tree backup_folder/
+  688  cat backup_folder/logs/2026-06-27.log 
+  689  ll
+  690  curl ysap.sh/episodes 
+  691  free -m
+  692  free -t
+  693  man free 
+  694  free -m
+  695  free -t
+  696  free -tm
+  697  free -tm | grep Total
+  698  free -tm
+  699  free -tm | grep Total
+  700  free -tm | grep Total | awk {print $4}
+  701  free -tm | grep Total | awk '{print $4}'
+  702  cdd Bash-Practice/
+  703  cd Bash-Practice/
+  704  ls
+  705  vim mem_status.sh
+  706  chmod 755 mem_status.sh 
+  707  ./mem_status.sh 
+  708  vim mem_status.sh
+  709  ./mem_status.sh 
+  710  vim mem_status.sh
+  711  git add .
+  712  git commit -m "create mem status scriptgit add ."
+  713  git push 
+  714  git pull 
+  715  git config pull.rebase false
+  716  git pull
+  717  ll
+  718  cat mem_status.sh 
+  719  git push 
+  720  ll
+  721  git status
+  722  grep 
+  723  grep
+  724  grep dave
+  725  wget https://course.ysap.sh/ysap-bash-course-2025.mp4'
+  726  wget https://course.ysap.sh/ysap-bash-course-2025.mp4
+  727  ll
+  728  echo yasir | cat
+  729  echo $PIPESTATUS
+  730  echo yasir | cat | grep y
+  731  echo $PIPESTATUS
+  732  echo $!
+  733  echo "$!"
+  734  echo yasir | cat | grep y
+  735  echo "$!"
+  736  echo "$#"
+  737  echo $#
+  738  echo yasir | cat | grep y
+  739  echo $#
+  740  echo {1..100}
+  741  echo {1..100} | ls -1
+  742  echo {1..100} | ls *
+  743  echo {1..100} | less
+  744  echo {1..100} cut -d " " 
+  745  echo {1..100} cut -d " " -f 1
+  746  echo {1..100} | cut -d " " -f 1
+  747  echo {1..100} | cut -d " " 
+  748  echo {1..100} | cut -d " " -f "    "
+  749  echo {seq 1 10} 
+  750  echo ${seq 1 10} 
+  751  echo '{seq 1 10} '
+  752  ollama run llama3.2
+  753  ollama list
+  754  curl http://localhost:11434/api/tags
+  755  docker exec open-webui ping -c 1 host.docker.internal
+  756  sudo docker exec open-webui ping -c 1 host.docker.internal
+  757  docker exec open-webui sh -c "curl http://host.docker.internal:11434/api/tags"
+  758  sudo docker exec open-webui sh -c "curl http://host.docker.internal:11434/api/tags"
+  759  ss -tlnp | grep 11434
+  760  systemctl --user stop ollama
+  761  ss -tlnp | grep 11434
+  762  docker exec open-webui sh -c "curl http://host.docker.internal:11434/api/tags"
+  763  sudo docker exec open-webui sh -c "curl http://host.docker.internal:11434/api/tags"
+  764  man docker
+  765  curl -fsSL https://ollama.com/install.sh | sh
+  766  ollama run llama3.2
+  767  ollama serve
+  768  ollama serve &
+  769  fg
+  770  ollama serve &
+  771  ollama serve & > /dev/null 2>&1
+  772  jobs
+  773  kill ollama serve &
+  774  ps aux | ollama
+  775  jobs
+  776  fg
+  777  jobs
+  778  ollama serve & > /dev/null 2>&1
+  779  pkill ollama 
+  780  jobs
+  781  sudo dnf remove docker                   docker-client                   docker-client-latest                   docker-common                   docker-latest                   docker-latest-logrotate                   docker-logrotate                   docker-selinux                   docker-engine-selinux                   docker-engine
+  782  curl -fsSL https://get.docker.com -o get-docker.sh
+  783  sudo sh ./get-docker.sh --dry-run
+  784  sudo systemctl enable --now docker
+  785  sudo systemctl enable --now docker.service
+  786  sudo systemctl status docker
+  787  ls
+  788  sudo sd ./get-docker.sh 
+  789  sudo sh ./get-docker.sh 
+  790  groups
+  791  cat /etc/group
+  792  sudo usermod -aG yasir docker
+  793  sudo usermod -aG docker yasir
+  794  groups
+  795  cat /etc/passwd
+  796  cat /etc/passwd | grep
+  797  cat /etc/passwd | grep yasir
+  798  groups
+  799  groups -a
+  800  grep docker /etc/group
+  801  id 
+  802  newgrp docker
+  803  groups
+  804  docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  805  docker ps
+  806  docker logs
+  807  docker log e9b33da095cf
+  808  docker logs e9b33da095cf
+  809  docker ps
+  810  ollama serve
+  811  jobs
+  812  OLLAMA_HOST=0.0.0.0:11434 ollama serve
+  813  jobsa
+  814  jobs
+  815  docker ps
+  816  docker stop  open-webui 
+  817  docker ps
+  818  docker list
+  819  docker container list
+  820  docker container ls
+  821  docker image ls
+  822  which ollama
+  823  which docker
+  824  ls -la $(which docker)
+  825  cd  $(which docker)
+  826  cd /var/lib/docker/
+  827  ls
+  828  sudo cd /var/lib/docker/
+  829  ll
+  830  sudo cd /var/lib/docker/
+  831  sudo ll /var/lib/docker/
+  832  sudo ls /var/lib/docker/
+  833  sudo ls /var/lib/docker/containers
+  834  sudo ls /var/lib/docker/image
+  835  sudo ls -la /usr/bin/ollama
+  836  which ollama
+  837  sudo ls -la /usr/local/bin/ollama
+  838  sudo ls -la /usr/local/bin/ollama/*
+  839  sudo ls* -la /usr/local/bin/ollama/
+  840  sudo ls -la /usr/local/bin/ollama/
+  841  ls -la /usr/share/ollama
+  842  cd /usr/share/ollama
+  843  systemctl status ollama
+  844  cd /usr/share/ollama/.ollama/models
+  845  cd /usr/share/ollama
+  846  yes
+  847  y
+  848  sudo dnf up -y
+  849  watch pa aux
+  850  watch ps aux
+  851  . .profile
+  852  . ~/.profile
+  853  . ~/.bashrc 
+  854  reset
+  855  command -v htop
+  856  ls /etc
+  857  ls /etc | grep kde
+  858  ls /etc | grep kde -w
+  859  ls /etc | grep yasir -w
+  860  ls /etc | grep yasir -q
+  861  ls -l
+  862  ls -l > ls.txt
+  863  cat ls.txt 
+  864  ls -l /etc > ls.txt
+  865  cat ls.txt 
+  866  ls -l >> ls.txt
+  867  cat ls.txt 
+  868  echo "--------------" >> ls.txt 
+  869  cat ls.txt 
+  870  echo "yasir" > ls.txt 
+  871  cat ls.txt 
+  872  rm ls.txt 
+  873  ls
+  874  rm get-docker.sh 
+  875  ls
+  876  rm ysap-bash-course-2025.mp4 
+  877  ll
+  878  dd if=/dev/zero of=~/zero.txt bs=1M count=10
+  879  ll
+  880  cat zero.txt 
+  881  less zero.txt 
+  882  ll -h
+  883  rm zero.txt 
+  884  ll
+  885  sudo dnf remove ollama
+  886  ollama
+  887  sudo dnf remove ollama
+  888  user
+  889  users
+  890  sudo systemctl stop ollama
+  891  sudo systemctl disable ollama
+  892  sudo rm /etc/systemd/system/ollama.service
+  893  sudo rm -r $(which ollama | tr 'bin' 'lib')
+  894  sudo rm $(which ollama)
+  895  sudo userdel ollama
+  896  sudo groupdel ollama
+  897  sudo rm -r /usr/share/ollama
+  898  cat /etc/passwd
+  899  cat /etc/passwd | grep ollama
+  900  cat /etc/group
+  901  cat /etc/group | grep ollama
+  902  sudo systemctl status ollama
+  903  sudo ls /usr/share/ollama
+  904  docker container
+  905  docker containers
+  906  docker container ls
+  907  man docker
+  908  docker -h
+  909  docker --host 
+  910  docker --help
+  911  docker --help | less
+  912  docker cont ls
+  913  docker container ls
+  914  docker rm e9b33da095cf
+  915  docker ps
+  916  dcoker stop e9b33da095cf
+  917  docker stop e9b33da095cf
+  918  docker rm e9b33da095cf
+  919  docker image ls
+  920  docker rmi 7f1b0a1a50cf
+  921  docker image ls
+  922  docker container ls
+  923  docker volume ls
+  924  docker volume rm open-webui
+  925  docker volume ls
+  926  history
+  927  history > h.txt
+  928  echo "A lab for deploying and hosting WordPress on a LEMP stack using Nginx, MariaDB, and PHP." > desc.txt
+  929  cat desc.txt 
+  930  mkdir repos
+  931  ll
+  932  mv linux-backup-automation/ Bash-Practice/ ansible-practice/
+  933  ll
+  934  mv ansible-practice/ repos/
+  935  ll
+  936  ll repos/
+  937  ll repos/ansible-practice/
+  938  cd repos/
+  939  ll
+  940  cd ansible-practice/
+  941  ll
+  942  mv linux-backup-automation/ ../
+  943  mv Bash-Practice/ ../
+  944  ll
+  945  cd ..
+  946  ll
+  947  mv ansible-practice/ Ansible-Practice
+  948  mv linux-backup-automation/ Linux-Backup-Automation
+  949  ll
+  950  cd ..
+  951  ll
+  952  nm-connection-editor 
+  953  cd repos/
+  954  ll
+  955  mkdir Dockerizing-a-NodeJS-WebApp
+  956  cd Dockerizing-a-NodeJS-WebApp/
+  957  git init
+  958  git branch -M main
+  959  git remote add origin git@github.com:aayasir2177/Dockerizing-a-NodeJS-WebApp.git
+  960  git push -u origin main
+  961  git add .
+  962  git commit 
+  963  touch README.md
+  964  ll
+  965  git add .
+  966  git commit -m "first"
+  967  git push -u origin main
+  968  cd repos/
+  969  ll
+  970  cd Dockerizing-a-NodeJS-WebApp/
+  971  ls
+  972  sudo dnf install code
+  973  sudo dnf install vscode
+  974  dnf search vscode
+  975  echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+  976  dnf check-update
+  977  sudo dnf install code
+  978  cd /var/lib/docker/containers
+  979  sudo cd /var/lib/docker/containers
+  980  cd ~/
+  981  ll
+  982  cd Downloads/
+  983  l
+  984  ll
+  985  mv fastify-url-shortener-main/* ../repos/Dockerizing-a-NodeJS-WebApp/
+  986  cd
+  987  cd repos/Dockerizing-a-NodeJS-WebApp/
+  988  ll
+  989  sudo dnf install npm
+  990  code .
+  991  npm install 
+  992  npm audit fix
+  993  ll
+  994  npm run
+  995  npm start
+  996  rm -rf ./* !(README.md)
+  997  ll
+  998  touch README.md
+  999  ll
+ 1000  sudo dnf up -y
+ 1001  cd repos/
+ 1002  cd Dockerizing-a-NodeJS-WebApp/
+ 1003  ll
+ 1004  vim .dockerignore
+ 1005  cp .dockerignore .gitignore
+ 1006  cat .dockerignore 
+ 1007  cat .gitignore 
+ 1008  vim dockerfile
+ 1009  docker -h | grep build
+ 1010  docker -h 
+ 1011  docker build . yasir/nodejs-wepapp
+ 1012  docker build ./ yasir/nodejs-wepapp
+ 1013  man docker
+ 1014  less docker -h
+ 1015  docker -h | less
+ 1016  docker build
+ 1017  docker build ./
+ 1018  docker --debug 
+ 1019  vim dockerfile 
+ 1020  docker build ./
+ 1021  ll
+ 1022  docker images
+ 1023  docker image ls
+ 1024  docker containers
+ 1025  docker volumes
+ 1026  docker volume ls
+ 1027  docker ps -a
+ 1028  docker iamges
+ 1029  docker images
+ 1030  docker images -a
+ 1031  docker rmi 5c0b7e1da8ac
+ 1032  docker rmi eb41684d284a
+ 1033  docker images
+ 1034  ll
+ 1035  docker build . -t nodejs-wepapp:v1
+ 1036  docker images
+ 1037  docker run nodejs-wepapp:v1 
+ 1038  docker run nodejs-wepapp:v1 -d
+ 1039  docker run -d nodejs-wepapp:v1 
+ 1040  docker ps
+ 1041  docker exec -i 680f317ae7a2 bash
+ 1042  docker exec -i 680f317ae7a2 /bin/bash
+ 1043  docker -exec 680f317ae7a2 /bin/bash
+ 1044  docker -h | less
+ 1045  docker exec -h | less
+ 1046  docker exec -i bash 680f317ae7a2
+ 1047  docker exec -i 680f317ae7a2
+ 1048  docker exec -it 680f317ae7a2 bash
+ 1049  docker exec -it 680f317ae7a2 sh
+ 1050* docker exec -it 
+ 1051  docker exec -it 680f317ae7a2 sh
+ 1052  man tree
+ 1053  docker exec -it 680f317ae7a2 sh
+ 1054  docker ps
+ 1055  docker stop 680f317ae7a2
+ 1056  docker ps
+ 1057  sudo ss -tulpn | grep :8080
+ 1058  ps -fp 18734
+ 1059  jobs
+ 1060  npm
+ 1061  kill 18734
+ 1062  ss -l
+ 1063  ss -tulpn
+ 1064  ss -tl
+ 1065  ss -ul
+ 1066  ss -tulpn
+ 1067  ss -tan
+ 1068  ps p
+ 1069  ps
+ 1070  ps aux
+ 1071  ps 
+ 1072  ps p 15385
+ 1073  ps -p 15385
+ 1074  ps -fp 15385
+ 1075  ps fp 15385
+ 1076  ps p 15385
+ 1077  ps p 
+ 1078  ps p 15385 f
+ 1079  ps p 15385 -f
+ 1080  ps aux
+ 1081  ps 
+ 1082  ps
+ 1083  ps a
+ 1084  ps au
+ 1085  ps a
+ 1086  ps u
+ 1087  ps ua
+ 1088  ps u
+ 1089  ps au
+ 1090  ps aux
+ 1091  ps aux -f | grep bash\
+ 1092  ps aux -f | grep bash
+ 1093  ps aux | grep bash
+ 1094  ps -fp 15385
+ 1095  pgrep 15385
+ 1096  pgrep bash
+ 1097  ss -putin
+ 1098  ss -tulpn
+ 1099  docker run nodejs-wepapp:v1 
+ 1100  docker run -dp 8080:8080 nodejs-wepapp:v1 
+ 1101  docker ps
+ 1102  docker stop 67001696bafa
+ 1103  docker run -dp 80:8080 nodejs-wepapp:v1 
+ 1104   docker stop youthful_kilby
+ 1105  docker ps
+ 1106   docker stop 66111f2df58c
+ 1107  docker ps
+ 1108  docker run nodejs-wepapp:v1 -dp 80:8080 --name nodejs
+ 1109  docker run -dp 80:8080 --name nodejs nodejs-wepapp:v1 
+ 1110  docker ps
+ 1111  docker stop nodejs 
+ 1112  docker ps
+ 1113  docker ps -a
+ 1114  docker container prune 
+ 1115  docker cont
+ 1116  docker conts
+ 1117  docker cont ls
+ 1118  docker container list
+ 1119  docker container ls
+ 1120  ps aux | docker
+ 1121  ps aux | grep docker
+ 1122  ss -tulpn | grep :80
+ 1123  ss -tulpn | grep :8080
+ 1124  ss -tulpn | grep :80
+ 1125  docker ps
+ 1126  docker ps -a
+ 1127  cat server.js 
+ 1128  docker run -dp 8080:8080 --name nodejsapp nodejs-wepapp:v1 
+ 1129  docker ps a
+ 1130  docker ps 
+ 1131  ps aux | grep docker
+ 1132  ss -tulpn | grep :8080
+ 1133  ps -fp 23967
+ 1134  docker pull nginx:latest
+ 1135  docker ps -a
+ 1136  docker images
+ 1137  docker image rm nginx:latest 
+ 1138  docker images
+ 1139  docker ps
+ 1140  docker stop nodejsapp 
+ 1141  ll
+ 1142  docker image ls
+ 1143  docker image rm nodejs-wepapp:v1 
+ 1144  docker pull jc21/nginx-proxy-manager:latest
+ 1145  docker ps
+ 1146  ll
+ 1147  vim compose.yaml
+ 1148  fg
+ 1149  sudo dnf install xclip
+ 1150  man xclip
+ 1151  xclip -selection clipboard < compose.yaml 
+ 1152  vim compose.yaml 
+ 1153  xclip -selection clipboard < compose.yaml 
+ 1154  vim compose.yaml 
+ 1155  xclip -selection clipboard < compose.yaml 
+ 1156  vim compose.yaml 
+ 1157  xclip -selection clipboard < compose.yaml 
+ 1158  docker ps -a
+ 1159  docker rm nodejsapp 
+ 1160  docker ps -a
+ 1161  docker image
+ 1162  docker images
+ 1163  docker compose up -d 
+ 1164  docker network ls
+ 1165  docker ps
+ 1166  vim /etc/hosts
+ 1167  xclip -selection clipboard < /etc/hosts
+ 1168  vim /etc/hosts
+ 1169  sudo vim /etc/hosts
+ 1170  ping nodejs-webapp.local
+ 1171  docker ps
+ 1172  docker stop dockerizing-a-nodejs-webapp-nginx-pm-1 dockerizing-a-nodejs-webapp-nodejs-webapp-1 
+ 1173  docker ps
+ 1174  vim server.js 
+ 1175  docker compose up -d
+ 1176  docker ps
+ 1177  docker compose up -d --build
+ 1178  vim .dockerignore 
+ 1179  vim .gitignore 
+ 1180  docker compose up -d --build
+ 1181  docker ps
+ 1182  docker network ls
+ 1183  vim server.js 
+ 1184  docker compose up -d --build
+ 1185  history > h.txt
