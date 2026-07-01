@@ -1,17 +1,16 @@
-# Dockerizing Node.js App + Nginx Proxy Manager
+# Dockerizing a Node.js WebApp + Nginx Proxy Manager
+This project shows how I containerized a node.js webapp using Dockerfile and deployed it using Docker Compose with Nginx Proxy Manager as a reverse proxy.
 
----
 
-## Create Project
+## Create project
 
 ```bash id="c1"
-cd repos/
 mkdir Dockerizing-a-NodeJS-WebApp
+
 cd Dockerizing-a-NodeJS-WebApp
 ```
 
----
-## Create Node.js Server
+## Create node.js server
 
 ```bash id="c2"
 vim server.js
@@ -31,27 +30,9 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`App running on ${PORT}`);
 });
-
 ```
 
----
-
-## Create .dockerignore and .gitignore
-
-```bash id="c3"
-vim .dockerignore
-vim .gitignore
-```
-
-```text id="c4"
-node_modules
-data
-letsencrypt
-```
-
----
-
-## Create Dockerfile
+## Create dockerfile
 
 ```bash id="c5"
 vim Dockerfile
@@ -77,37 +58,21 @@ EXPOSE 8080
 CMD ["npm", "start"]
 ```
 
----
-
-## Build Docker Image
+## Build docker image
 
 ```bash id="c7"
 docker build -t nodejs-webapp:v1 .
 docker image ls
 ```
 
----
-
-## Run Container for testing
+## Run container for testing
 
 ```bash id="c8"
 docker run -dp 8080:8080 --name nodejs nodejs-webapp:v1
 docker ps
 ```
 
----
-
-## Debug Running Container
-
-```bash id="c9"
-docker exec -it nodejs sh
-ss -tulpn
-ps aux
-```
-
----
-
-## Stop and Cleanup
+## Stop and rm after testing
 
 ```bash id="c10"
 docker stop nodejs
@@ -115,9 +80,7 @@ docker rm nodejs
 docker rmi nodejs-webapp:v1
 ```
 
----
-
-## Create Docker Compose
+## Create docker compose file
 
 ```bash id="c11"
 vim compose.yaml
@@ -159,8 +122,6 @@ networks:
       name: web
 ```
 
----
-
 ## Deploy
 
 ```bash id="c13"
@@ -168,9 +129,21 @@ docker compose up -d --build
 docker ps
 docker network ls
 ```
----
 
-## Add Local Domain Mapping
+## Create .dockerignore and .gitignore
+
+```bash id="c3"
+vim .dockerignore
+vim .gitignore
+```
+
+```text id="c4"
+node_modules
+data
+letsencrypt
+```
+
+## Add local domain
 
 ```bash id="c14"
 sudo vim /etc/hosts
@@ -183,15 +156,34 @@ sudo vim /etc/hosts
 ```bash id="c16"
 ping nodejs-webapp.local
 ```
----
-
----
 
 ## Rebuilding after updates
 
 ```bash id="c18"
 docker compose up -d --build
 ```
----
+
+## What I learned
+
+* Containerizing a Node.js webapp using Dockerfile
+* Debugging with docker exec, ss, and ps
+* Multi container setup using Docker Compose
+* Docker networking
+* Reverse proxy setup using Nginx Proxy Manager
+* Local domain mapping
+
+## Screenshots
+
+<img width="1896" height="239" alt="image" src="https://github.com/user-attachments/assets/ac2e4a59-78c2-4a03-b379-8546f112af64" />
+
+<img width="1205" height="300" alt="image" src="https://github.com/user-attachments/assets/15cadd81-2e1c-4d02-be50-9260832b114a" />
+
+<img width="1544" height="262" alt="image" src="https://github.com/user-attachments/assets/2c8be657-c1f3-4f1e-8956-30e3e5451e96" />
+
+
+<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/19094e41-195e-41c1-8fd3-a2f98e4246ef" />
+
+
+
 
 
