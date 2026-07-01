@@ -65,12 +65,15 @@ docker build -t nodejs-webapp:v1 .
 docker image ls
 ```
 
+<img width="1393" height="122" alt="image" src="https://github.com/user-attachments/assets/f962f425-126f-46af-8c01-e9896123f67e" />
+
 ## Run container for testing
 
 ```bash id="c8"
 docker run -dp 8080:8080 --name nodejs nodejs-webapp:v1
 docker ps
 ```
+<img width="1896" height="239" alt="image" src="https://github.com/user-attachments/assets/ac2e4a59-78c2-4a03-b379-8546f112af64" />
 
 ## Stop and rm after testing
 
@@ -129,6 +132,9 @@ docker compose up -d --build
 docker ps
 docker network ls
 ```
+<img width="1544" height="262" alt="image" src="https://github.com/user-attachments/assets/2c8be657-c1f3-4f1e-8956-30e3e5451e96" />
+
+<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/19094e41-195e-41c1-8fd3-a2f98e4246ef" />
 
 ## Create .dockerignore and .gitignore
 
@@ -153,15 +159,21 @@ sudo vim /etc/hosts
 127.0.0.1 nodejs-webapp.local
 ```
 
+<img width="1248" height="301" alt="image" src="https://github.com/user-attachments/assets/a6b11083-8d90-4c87-9d5b-1cb258e8cdb5" />
+
 ```bash id="c16"
 ping nodejs-webapp.local
 ```
+
+<img width="1111" height="364" alt="image" src="https://github.com/user-attachments/assets/d193d1c7-b7df-42ae-bf4a-a4dd440cbcb0" />
 
 ## Rebuilding after updates
 
 ```bash id="c18"
 docker compose up -d --build
 ```
+
+<img width="1731" height="834" alt="image" src="https://github.com/user-attachments/assets/f0587ba0-8b18-4932-92f3-3e36750c77a0" />
 
 ## What I learned
 
@@ -171,19 +183,6 @@ docker compose up -d --build
 * Docker networking
 * Reverse proxy setup using Nginx Proxy Manager
 * Local domain mapping
-
-## Screenshots
-
-<img width="1896" height="239" alt="image" src="https://github.com/user-attachments/assets/ac2e4a59-78c2-4a03-b379-8546f112af64" />
-
-<img width="1205" height="300" alt="image" src="https://github.com/user-attachments/assets/15cadd81-2e1c-4d02-be50-9260832b114a" />
-
-<img width="1544" height="262" alt="image" src="https://github.com/user-attachments/assets/2c8be657-c1f3-4f1e-8956-30e3e5451e96" />
-
-
-<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/19094e41-195e-41c1-8fd3-a2f98e4246ef" />
-
-
 
 
 
