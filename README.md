@@ -65,8 +65,6 @@ docker build -t nodejs-webapp:v1 .
 docker image ls
 ```
 
-<img width="1393" height="122" alt="image" src="https://github.com/user-attachments/assets/f962f425-126f-46af-8c01-e9896123f67e" />
-
 ## Run container for testing
 
 ```bash id="c8"
@@ -132,9 +130,6 @@ docker compose up -d --build
 docker ps
 docker network ls
 ```
-<img width="1544" height="262" alt="image" src="https://github.com/user-attachments/assets/2c8be657-c1f3-4f1e-8956-30e3e5451e96" />
-
-<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/19094e41-195e-41c1-8fd3-a2f98e4246ef" />
 
 ## Create .dockerignore and .gitignore
 
@@ -174,6 +169,10 @@ docker compose up -d --build
 ```
 
 <img width="1731" height="834" alt="image" src="https://github.com/user-attachments/assets/f0587ba0-8b18-4932-92f3-3e36750c77a0" />
+
+<img width="1544" height="262" alt="image" src="https://github.com/user-attachments/assets/2c8be657-c1f3-4f1e-8956-30e3e5451e96" />
+
+<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/19094e41-195e-41c1-8fd3-a2f98e4246ef" />
 
 ## What I learned
 
